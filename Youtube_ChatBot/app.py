@@ -1,24 +1,3 @@
-# import streamlit as st
-# from chatbot import answer_question
-
-# st.set_page_config(page_title="YouTube RAG Bot", layout="centered")
-
-# st.title("🎥 YouTube Q&A Bot")
-# st.write("Ask questions from a YouTube video transcript")
-
-# youtube_url = st.text_input("🔗 YouTube URL")
-# question = st.text_input("❓ Your question")
-
-# if st.button("Ask"):
-#     if not youtube_url or not question:
-#         st.warning("Please enter both fields.")
-#     else:
-#         with st.spinner("Thinking..."):
-#             answer = answer_question(youtube_url, question)
-
-#         st.success("Answer")
-#         st.write(answer)
-
 import streamlit as st
 from chatbot import answer_question
 
@@ -99,3 +78,4 @@ if ask_clicked:
 # ---------------- FOOTER ----------------
 st.markdown("---")
 st.caption("© YouTube RAG Bot • Transcript-grounded answers only")
+
